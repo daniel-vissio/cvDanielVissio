@@ -625,3 +625,146 @@ html{
     transition: 1s;
     margin-bottom: 0;
 }
+
+/*Contact*/
+
+.contact{
+    background-image: url(img/contactus2.jpg);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contact .cont-sec-contact{
+    max-width: 1100px;
+    margin:auto;
+}
+
+.contact h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contact .fila{
+    display: flex;
+}
+
+.contact .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contact .col input, .contact .col textarea{
+    display:block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 17px;
+}
+
+.contact button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contact button .overlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #FE642E;
+    z-index: -1;
+    transition: 2s;
+}
+
+.contact button:hover .overlay{
+    width: 100%;
+}
+
+.contact .col img{
+    width: 100%;
+}
+
+.contact .col .info{
+    position: relative;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -258%);
+}
+
+.contact .col .info ul{
+    list-style: none;
+}
+
+.contact .col .info ul li{
+    margin-bottom: none;
+}
+
+.contact .col .info ul li i{
+    color: #FE642E;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #252A2E;
+    color:#fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .red{
+    margin-bottom: 20px;
+}
+
+footer .red a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .up{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #FE642E;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
