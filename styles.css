@@ -9,9 +9,13 @@
 
 html{
     scroll-behavior: smooth;
+    background-color: #1e2326;
+    /* background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.webp); */
 }
 
 /*Menu*/
+
 
 .cont-header{
     background: #1e2326;
@@ -371,7 +375,7 @@ html{
     animation: 2s pythontkinter forwards;
 }
 
-@keyframes tpythontkinter{
+@keyframes pythontkinter{
     0%{width: 0%;}
     100%{width: 80%}
 }
@@ -768,3 +772,93 @@ footer .up{
     line-height: 50px;
     font-size: 18px;
 }
+
+/*Responsive*/
+
+@media screen and (max-width: 900px) {
+    nav{
+        display:none;
+    }
+    .ini{
+        flex-direction: column;
+    }
+    .nav-responsive{
+        display:block;
+    }
+
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+    }
+
+    nav.responsive ul li{
+        border-bottom: 1px solid #FE642E;
+        padding: 10px 0;
+    }  
+}
+
+@media screen and (max-width:700px){
+    .aboutme .aboutmerow{
+        display: block;
+    }
+
+    .aboutme .aboutmerow .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+
+    .skills .fila .col{
+        width: 100%;
+    }
+
+    .skills .fila .col .bar-skill{
+        width: 100;
+    }
+
+    .cv .fila{
+        display: block;
+    }
+
+    .cv .fila .col{
+        width: 90%;
+    }
+
+    .cv .fila .right{
+        margin-left: 20px;
+    }
+
+    .portfolio .gallery{
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .gallery .project{
+        max-width: 100%;
+    }
+
+    .portfolio .gallery .project img{
+        width: 100%;
+    }
+
+    .contact .fila{
+        display: block;
+    }
+
+    .contact .fila .col{
+        width: 100%;
+    }
+
+
+}
+

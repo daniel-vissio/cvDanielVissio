@@ -10,6 +10,7 @@
     <title>Portfolio Daniel C. Vissio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="cont-header">
         <header>
@@ -18,15 +19,15 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#ini">HOME</a></li>
-                    <li><a href="#aboutme">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#cv">CURRICULUM</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#ini" onclick="select()">HOME</a></li>
+                    <li><a href="#aboutme" onclick="select()">ABOUT ME</a></li>
+                    <li><a href="#skills" onclick="select()">SKILLS</a></li>
+                    <li><a href="#cv" onclick="select()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="select()">PORTFOLIO</a></li>
+                    <li><a href="#contact" onclick="select()">CONTACT</a></li>
                 </ul>
             </nav>
-            <div class="nav-responsive">
+            <div class="nav-responsive" onclick="menuNav()">
                 <i class="fa-solid fa-bars fa-beat-fade"></i>
             </div>
         </header>
@@ -40,14 +41,14 @@
             <h1>Daniel C. Vissio</h1>
             <h2>Software Developer | Front-end</h2>
             <div class="red">
-                <a href="#"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
-                <a href="#"><i class="fa-brands fa-github fa-bounce"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter fa-bounce"></i></a>
+                <a href="https://www.linkedin.com/in/dcvissio/"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+                <a href="https://github.com/daniel-vissio"><i class="fa-brands fa-github fa-bounce"></i></a>
+                <a href="https://twitter.com/mzadanielv2"><i class="fa-brands fa-twitter fa-bounce"></i></a>
             </div>
         </div>
     </section>
-
-    <serction id="aboutme" class="aboutme">
+    
+    <section id="aboutme" class="aboutme">
         <div class="cont-secc">
             <h2>About Me</h2>
             <p><span>Hello, i'm Daniel C. Vissio</span>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -127,7 +128,7 @@
                 <span class="overlay"></span>
             </button>
         </div>
-    </serction>
+    </section>
 
     <section id="skills" class="skills">
         <div class="con-sec-skills">
@@ -385,11 +386,14 @@
         <a href="#ini" class="up">
             <i class="fa-solid fa-angles-up fa-bounce"></i>
         </a>
+        
         <div class="red">
-            <a href="#"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
-            <a href="#"><i class="fa-brands fa-github fa-bounce"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter fa-bounce"></i></a>
+            <a href="https://www.linkedin.com/in/dcvissio/"><i class="fa-brands fa-linkedin fa-bounce"></i></a>
+            <a href="https://github.com/daniel-vissio"><i class="fa-brands fa-github fa-bounce"></i></a>
+            <a href="https://twitter.com/mzadanielv2"><i class="fa-brands fa-twitter fa-bounce"></i></a>
         </div>
     </footer>
+
+    <script src="cv.js"></script>
 </body>
 </html>
